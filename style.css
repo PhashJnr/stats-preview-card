@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  padding: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  color: #fff;
+  line-height: 1.5;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 100px auto 0;
+  border-radius: 10px;
+}
+
+.content {
+  padding: 50px 50px 50px 50px;
+  background-color: hsl(244, 38%, 16%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+/* review section */
+.review {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #fff;
+  margin-top: 80px;
+  padding-right: 100px;
+}
+
+.review p {
+  font-size: 12px;
+}
+
+.review h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Image and Image Accent */
+
+.image-accent img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.5;
+  object-fit: cover;
+  position: relative;
+}
+
+.image-accent {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(277, 64%, 61%);
+}
+
+.image-accent::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* MEDIA QUIERY FOR MOBILE SCREEN */
+@media screen and (max-width: 875px) {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 10px;
+    overflow-y: scroll;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .review {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .stats-fig {
+    margin: 15px;
+  }
+  .image-accent img {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .image-accent {
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .content {
+    border-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}

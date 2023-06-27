@@ -81,7 +81,8 @@ p {
   height: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  opacity: 0.5;
+  opacity: 0.75;
+  mix-blend-mode: multiply
   object-fit: cover;
   position: relative;
 }
